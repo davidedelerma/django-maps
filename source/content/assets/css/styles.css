@@ -7,9 +7,12 @@
 }
 .leaflet-container {  /* all maps */
     width:  800px;
-    height: 800px;
+    height: 80%;
     position: fixed;
-    margin-bottom: 1%;
+    margin-bottom: auto;
+    bottom: 65px;
+    top: 65px;
+    z-index: -1;
 }
 
 #specialbigmap {
