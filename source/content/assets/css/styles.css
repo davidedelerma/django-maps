@@ -1,2 +1,27 @@
-/* Hi there */
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #eb0d0d;
+}
+.leaflet-container {  /* all maps */
+    width:  800px;
+    height: 800px;
+    position: fixed;
+    margin-bottom: 1%;
+}
+
+#specialbigmap {
+    height: 800px;
+}
+
+/* Resize the "display_raw" textbox */
+.django-leaflet-raw-textarea {
+    width: 100%;
+}
+
+.container {
+    margin: 1% 0;
+}
 

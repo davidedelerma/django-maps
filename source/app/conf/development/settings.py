@@ -26,9 +26,10 @@ INSTALLED_APPS = [
 
     # Vendor apps
     'bootstrap4',
+    'leaflet',
 
     # Application apps
-    'main',
+    'maps',
     'accounts',
 ]
 
