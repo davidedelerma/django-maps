@@ -7,6 +7,12 @@
 {% block content %}
 
     {% if request.user.is_authenticated %}
+        <script type="text/javascript">
+            window.addEventListener("map:init", function (e) {
+                var detail = e.detail;
+                L.marker([40.8345, 14.3447]).addTo(detail.map);
+            }, false);
+        </script>
         {% leaflet_map "main" %}
     {% else %}
 

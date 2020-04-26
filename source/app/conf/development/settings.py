@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django.contrib.gis',
 
     # Vendor apps
     'bootstrap4',
@@ -73,10 +74,12 @@ DEFAULT_FROM_EMAIL = 'test@example.com'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.contrib.gis.db.backends.spatialite',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+SPATIALITE_LIBRARY_PATH='mod_spatialite.so'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
