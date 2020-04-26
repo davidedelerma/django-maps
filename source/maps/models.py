@@ -15,7 +15,7 @@ class WorldBorder(models.Model):
     subregion = models.IntegerField()
     lon = models.FloatField()
     lat = models.FloatField()
-    geom = models.MultiPolygonField(srid=4326)
+    geom = models.MultiPolygonField(null=False, srid=4326)
 
     def __str__(self):
         return self.name
